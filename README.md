@@ -19,6 +19,6 @@ Steps to execute:
 
 - Make sure you configure the environment variables in the .env file for your database and once you have configured it type this command: php artisan migration
 
-- Once the migrations are done, run Laravel and Vue: npm run dev
+- Once the migrations are done, run the app whit this command: npm run dev
 
 - Open the app in the web browser: http://127.0.0.1:8080
