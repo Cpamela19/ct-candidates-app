@@ -10,8 +10,6 @@ RUN apt update && apt install -y curl
 
 RUN apt-get install -y nodejs npm
 
-RUN npm install
-
 RUN chmod 777 -R .
 
 EXPOSE 80
