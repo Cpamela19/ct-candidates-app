@@ -1,0 +1,6 @@
+*.sock
+node_modules/
+storage/*.key
+storage/debugbar/
+tmp/
+vendor/
