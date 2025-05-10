@@ -2,13 +2,15 @@
 version: '3'
 services:
     app:
-        build: 
+        build:
             context: .
             dockerfile: Dockerfile
         ports:
             - '${APP_PORT:-80}:80'
         volumes:
             - '.:/app'
+            - /app/vendor
+            - /app/node_modules
         networks:
             - sail
         depends_on:

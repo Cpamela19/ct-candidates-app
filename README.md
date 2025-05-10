@@ -17,7 +17,7 @@ Steps to execute:
 
 - If you have problems installing Laravel or Node try: composer update and node update
 
-- Make sure you configure the environment variables in the .env file for your database and once you have configured it type this command: php artisan migration
+- Make sure you configure the environment variables in the .env file for your database and once you have configured it type this command: php artisan migrate
 
 - Once the migrations are done, run the app whit this command: npm run dev
 
