@@ -8,11 +8,11 @@ COPY package*.json /app
 
 COPY composer.* /app
 
+COPY . /app
+
 RUN apt update && apt install -y curl
 
 RUN apt-get install -y nodejs npm
-
-COPY . /app
 
 RUN composer install --no-interaction --no-plugins --no-scripts
 
@@ -21,3 +21,5 @@ RUN npm install
 RUN chmod 777 -R .
 
 EXPOSE 80
+
+RUN npm run dev
